@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27431,        838]
-NotebookOptionsPosition[     26255,        790]
-NotebookOutlinePosition[     26595,        805]
-CellTagsIndexPosition[     26552,        802]
+NotebookDataLength[     27597,        839]
+NotebookOptionsPosition[     26422,        791]
+NotebookOutlinePosition[     26762,        806]
+CellTagsIndexPosition[     26719,        803]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -79,7 +79,7 @@ Cell[BoxData[
       RowBox[{"-", 
        FractionBox["l", "2"]}]}], "}"}]}], "}"}], "]"}]], "Output",
  CellChangeTimes->{3.72166213315166*^9, 3.721667800079794*^9, 
-  3.721668232380739*^9}]
+  3.721668232380739*^9, 3.721675352866341*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -172,7 +172,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.721673472636025*^9, 3.7216735173774643`*^9, 3.721673559082654*^9, {
    3.72167359409489*^9, 3.7216736179821157`*^9}, 3.721673747241634*^9, 
-   3.721674331072789*^9}]
+   3.721674331072789*^9, 3.721675352967605*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -266,7 +266,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -299,7 +299,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -332,7 +332,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -353,7 +353,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -386,7 +386,7 @@ Cell[BoxData[
   3.7216716447444363`*^9, 3.721671646144891*^9}, {3.721672848503594*^9, 
   3.721672860723814*^9}, {3.7216728955619717`*^9, 3.721672906700452*^9}, {
   3.7216737683364162`*^9, 3.721673797601371*^9}, {3.721674340896611*^9, 
-  3.721674342887518*^9}}],
+  3.721674342887518*^9}, {3.721675311045658*^9, 3.721675314312446*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -451,76 +451,76 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"-", "6.6`"}], ",", 
         RowBox[{"-", "42.`"}]}], "}"}]}], "}"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", 
         FractionBox["17", "2"]}], ",", 
        RowBox[{"-", "15"}]}], "}"}], ",", "1.1`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        FractionBox["17", "2"], ",", "15"}], "}"}], ",", "1.1`"}], "]"}], ",", 
    
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        FractionBox["17", "2"], ",", 
        RowBox[{"-", "30"}]}], "}"}], ",", "1.1`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", 
         FractionBox["17", "2"]}], ",", "30"}], "}"}], ",", "1.1`"}], "]"}], 
    ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", 
         FractionBox["17", "2"]}], ",", "15"}], "}"}], ",", "1.95`"}], "]"}], 
    ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        FractionBox["17", "2"], ",", 
        RowBox[{"-", "15"}]}], "}"}], ",", "1.95`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        FractionBox["17", "2"], ",", "30"}], "}"}], ",", "1.95`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", 
         FractionBox["17", "2"]}], ",", 
        RowBox[{"-", "30"}]}], "}"}], ",", "1.95`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "6.6`"}], ",", "0"}], "}"}], ",", "1.2`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"6.6`", ",", "0"}], "}"}], ",", "1.2`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"0", ",", "0"}], "}"}], ",", "1.5`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"0", ",", 
        RowBox[{"-", "18.`"}]}], "}"}], ",", "1.5`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"0", ",", "18.`"}], "}"}], ",", "1.5`"}], "]"}], ",", 
@@ -543,7 +543,8 @@ Cell[BoxData[
   3.7216625858519363`*^9, 3.7216678049623003`*^9, 3.721668235795044*^9, {
    3.7216708762657623`*^9, 3.7216708879532013`*^9}, 3.721670930505497*^9, 
    3.721671646686041*^9, 3.721672863119463*^9, 3.721672907239101*^9, {
-   3.721673770382719*^9, 3.721673799315187*^9}, 3.7216743462518463`*^9}]
+   3.721673770382719*^9, 3.721673799315187*^9}, 3.7216743462518463`*^9, 
+   3.721675353007024*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -563,7 +564,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -589,7 +590,7 @@ Cell[BoxData[
       RowBox[{
        RowBox[{
         RowBox[{
-         RowBox[{"Circle", "[", 
+         RowBox[{"Disk", "[", 
           RowBox[{"pos", ",", "r"}], "]"}], "/.", 
          RowBox[{"pos", "\[Rule]", "#"}]}], "&"}], "/@", 
        RowBox[{"{", 
@@ -636,37 +637,38 @@ Cell[BoxData[
   3.721668448009931*^9, 3.721668478988826*^9}, {3.721668613094614*^9, 
   3.721668614389411*^9}, {3.721668868784474*^9, 3.721668918031699*^9}, {
   3.721669074825366*^9, 3.721669082383947*^9}, {3.721669196240554*^9, 
-  3.7216692157048073`*^9}, {3.721669857822299*^9, 3.721669858504888*^9}}],
+  3.7216692157048073`*^9}, {3.721669857822299*^9, 3.721669858504888*^9}, {
+  3.721675327643505*^9, 3.721675328591401*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "7.5`"}], ",", "4.`"}], "}"}], ",", "1.75`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"7.5`", ",", "4.`"}], "}"}], ",", "1.75`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "9.5`"}], ",", 
        RowBox[{"-", "69.25`"}]}], "}"}], ",", "1.75`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{
        RowBox[{"-", "9.5`"}], ",", "69.25`"}], "}"}], ",", "1.75`"}], "]"}], 
    ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"9.5`", ",", "69.25`"}], "}"}], ",", "1.75`"}], "]"}], ",", 
-   RowBox[{"Circle", "[", 
+   RowBox[{"Disk", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"9.5`", ",", 
@@ -690,7 +692,7 @@ Cell[BoxData[
   3.721662588880582*^9, 3.721667808694158*^9, 3.721668237181732*^9, {
    3.721668453046506*^9, 3.72166845630525*^9}, 3.721668885486518*^9, 
    3.721668918437169*^9, 3.721669083075593*^9, 3.721669216172098*^9, 
-   3.7216696617081633`*^9, 3.721669865292041*^9}]
+   3.7216696617081633`*^9, 3.721669865292041*^9, 3.721675353038241*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -730,17 +732,16 @@ Cell[BoxData[
    PolygonBox[{{-3.1, -21.85}, {3.1, -21.85}, {3., -26.7}, {-3., -26.7}}], 
    PolygonBox[{{-6.7, 37.5}, {6.7, 37.5}, {6.6, 42.}, {-6.6, 42.}}], 
    PolygonBox[{{-6.7, -37.5}, {6.7, -37.5}, {6.6, -42.}, {-6.6, -42.}}], 
-   CircleBox[NCache[{Rational[-17, 2], -15}, {-8.5, -15}], 1.1], 
-   CircleBox[NCache[{Rational[17, 2], 15}, {8.5, 15}], 1.1], 
-   CircleBox[NCache[{Rational[17, 2], -30}, {8.5, -30}], 1.1], 
-   CircleBox[NCache[{Rational[-17, 2], 30}, {-8.5, 30}], 1.1], 
-   CircleBox[NCache[{Rational[-17, 2], 15}, {-8.5, 15}], 1.95], 
-   CircleBox[NCache[{Rational[17, 2], -15}, {8.5, -15}], 1.95], 
-   CircleBox[NCache[{Rational[17, 2], 30}, {8.5, 30}], 1.95], 
-   CircleBox[NCache[{Rational[-17, 2], -30}, {-8.5, -30}], 1.95], 
-   CircleBox[{-6.6, 0}, 1.2], CircleBox[{6.6, 0}, 1.2], 
-   CircleBox[{0, 0}, 1.5], CircleBox[{0, -18.}, 1.5], 
-   CircleBox[{0, 18.}, 1.5], 
+   DiskBox[NCache[{Rational[-17, 2], -15}, {-8.5, -15}], 1.1], 
+   DiskBox[NCache[{Rational[17, 2], 15}, {8.5, 15}], 1.1], 
+   DiskBox[NCache[{Rational[17, 2], -30}, {8.5, -30}], 1.1], 
+   DiskBox[NCache[{Rational[-17, 2], 30}, {-8.5, 30}], 1.1], 
+   DiskBox[NCache[{Rational[-17, 2], 15}, {-8.5, 15}], 1.95], 
+   DiskBox[NCache[{Rational[17, 2], -15}, {8.5, -15}], 1.95], 
+   DiskBox[NCache[{Rational[17, 2], 30}, {8.5, 30}], 1.95], 
+   DiskBox[NCache[{Rational[-17, 2], -30}, {-8.5, -30}], 1.95], 
+   DiskBox[{-6.6, 0}, 1.2], DiskBox[{6.6, 0}, 1.2], DiskBox[{0, 0}, 1.5], 
+   DiskBox[{0, -18.}, 1.5], DiskBox[{0, 18.}, 1.5], 
    PolygonBox[{{-14.5, -44.8}, {-14.5, 44.8}, {14.5, 44.8}, {14.5, -44.8}}]},
   Frame->True]], "Print",
  CellChangeTimes->{
@@ -751,14 +752,14 @@ Cell[BoxData[
    3.721669177907308*^9, 3.7216692206650057`*^9, 3.721669353042718*^9, 
    3.7216698690572*^9, 3.721670896909066*^9, 3.7216709350485353`*^9, 
    3.721671650531414*^9, 3.721672869530151*^9, 3.721672910232478*^9, 
-   3.721673805099565*^9, 3.7216743506969624`*^9}],
+   3.721673805099565*^9, 3.7216743506969624`*^9, 3.721675353074256*^9}],
 
 Cell[BoxData[
  GraphicsBox[
   {GrayLevel[0], Thickness[Large], Opacity[0.5], EdgeForm[Thickness[Large]], 
-   CircleBox[{-7.5, 4.}, 1.75], CircleBox[{7.5, 4.}, 1.75], 
-   CircleBox[{-9.5, -69.25}, 1.75], CircleBox[{-9.5, 69.25}, 1.75], 
-   CircleBox[{9.5, 69.25}, 1.75], CircleBox[{9.5, -69.25}, 1.75], 
+   DiskBox[{-7.5, 4.}, 1.75], DiskBox[{7.5, 4.}, 1.75], 
+   DiskBox[{-9.5, -69.25}, 1.75], DiskBox[{-9.5, 69.25}, 1.75], 
+   DiskBox[{9.5, 69.25}, 1.75], DiskBox[{9.5, -69.25}, 1.75], 
    PolygonBox[{{-14.95, -84.1}, {-14.95, 84.1}, {14.95, 84.1}, {
     14.95, -84.1}}]},
   Frame->True]], "Print",
@@ -770,7 +771,7 @@ Cell[BoxData[
    3.721669177907308*^9, 3.7216692206650057`*^9, 3.721669353042718*^9, 
    3.7216698690572*^9, 3.721670896909066*^9, 3.7216709350485353`*^9, 
    3.721671650531414*^9, 3.721672869530151*^9, 3.721672910232478*^9, 
-   3.721673805099565*^9, 3.721674350701201*^9}]
+   3.721673805099565*^9, 3.7216743506969624`*^9, 3.7216753530791197`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -784,7 +785,7 @@ Cell[BoxData[
    3.7216692206730137`*^9, 3.721669353050902*^9, 3.721669869065503*^9, 
    3.721670896917514*^9, 3.7216709350565653`*^9, 3.7216716505401363`*^9, 
    3.7216728695393333`*^9, 3.721672910240129*^9, 3.7216738051071672`*^9, 
-   3.721674350704671*^9}]
+   3.721674350704671*^9, 3.7216753530828743`*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -808,36 +809,36 @@ Cell[CellGroupData[{
 Cell[580, 22, 120, 1, 65, "Section"],
 Cell[CellGroupData[{
 Cell[725, 27, 859, 27, 34, "Input"],
-Cell[1587, 56, 712, 25, 50, "Output"]
+Cell[1587, 56, 734, 25, 50, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2348, 87, 91, 1, 65, "Section"],
+Cell[2370, 87, 91, 1, 65, "Section"],
 Cell[CellGroupData[{
-Cell[2464, 92, 1474, 44, 98, "Input"],
-Cell[3941, 138, 1163, 36, 57, "Output"]
+Cell[2486, 92, 1474, 44, 98, "Input"],
+Cell[3963, 138, 1185, 36, 57, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5141, 179, 7115, 209, 542, "Input"],
-Cell[12259, 390, 4777, 155, 352, "Output"]
+Cell[5185, 179, 7153, 209, 542, "Input"],
+Cell[12341, 390, 4777, 156, 280, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17085, 551, 87, 1, 65, "Section"],
+Cell[17167, 552, 87, 1, 65, "Section"],
 Cell[CellGroupData[{
-Cell[17197, 556, 2885, 82, 203, "Input"],
-Cell[20085, 640, 1718, 52, 103, "Output"]
+Cell[17279, 557, 2930, 83, 203, "Input"],
+Cell[20212, 642, 1728, 52, 80, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21852, 698, 98, 1, 65, "Section"],
+Cell[21989, 700, 98, 1, 65, "Section"],
 Cell[CellGroupData[{
-Cell[21975, 703, 817, 18, 57, "Input"],
+Cell[22112, 705, 817, 18, 57, "Input"],
 Cell[CellGroupData[{
-Cell[22817, 725, 1728, 28, 440, "Print"],
-Cell[24548, 755, 982, 17, 440, "Print"]
+Cell[22954, 727, 1720, 27, 440, "Print"],
+Cell[24677, 756, 996, 17, 440, "Print"]
 }, Open  ]],
-Cell[25545, 775, 682, 11, 67, "Output"]
+Cell[25688, 776, 706, 11, 67, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
