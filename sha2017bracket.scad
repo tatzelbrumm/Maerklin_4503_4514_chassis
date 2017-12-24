@@ -3,7 +3,7 @@ m= 3;       // thickness of material
 
 l_sha= 95;  // length of SHA2017
 h_sha= 86;  // height of SHA2017
-t_sha= 1.6; // thickness of SHA2017 PCB
+t_sha= 1.4; // thickness of SHA2017 PCB
 w_sha= 12;  // width of SHA2017 badge with battery
 
 l= 168;     // length of bracket
