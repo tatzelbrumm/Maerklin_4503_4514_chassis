@@ -74,8 +74,8 @@ module longbrackets()
 
 module crossbeams()
 {
-    crossbeam(h1,h3,wd_r0ket);
-    translate([0,h1+4]) crossbeam(h2,h4,-wd_r0ket);
+    crossbeam(h1,h3,-wd_r0ket);
+    translate([0,h1+4]) crossbeam(h2,h4,wd_r0ket);
 }
 
 longbrackets();
