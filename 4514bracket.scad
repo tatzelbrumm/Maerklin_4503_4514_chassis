@@ -4,8 +4,8 @@ m= 3;       // thickness of material
 l= 168;     // length of bracket
 w= 28;      // width of crossbeam
 l1= 69.25;  // length of mounting hole center to car center
-l2= 10;     // length of crossbeams center to car center
-l3= 30;     // length of crossbeams center to car center
+l2= 15;     // length of crossbeams center to car center
+l3= 45;     // length of crossbeams center to car center
 d= 3.5;     // mounting hole diameter
 hn= 2;      // depth of feet
 h0= 5;      // minimum height
@@ -55,17 +55,17 @@ module crossbeam()
 
 module longbrackets()
 {
-    translate([-5,0]) mirror([1,0]) longbracket();
-    translate([5, 0]) longbracket();
+    translate([-wk-2,0]) mirror([1,0]) longbracket();
+    translate([wk+2, 0]) longbracket();
 }
 
 module crossbeams()
 {
-    translate([0,-5]) mirror([0,1]) crossbeam();
-    translate([0,5]) crossbeam();
+    translate([0,-2]) mirror([0,1]) crossbeam();
+    translate([0,2]) crossbeam();
 }
 
 longbrackets();
-translate([0,l/2+h1+10]) crossbeams();
-translate([0,-l/2-h1-10]) crossbeams();
+translate([h1+w/2+wk+4,h1+4]) crossbeams();
+translate([h1+w/2+wk+4,-h1-4]) crossbeams();
 
