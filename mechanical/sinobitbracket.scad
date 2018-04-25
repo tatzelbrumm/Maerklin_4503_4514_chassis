@@ -4,6 +4,7 @@ $fn=64;
  */
 w_sinobit= 92.075;
 t_sinobit= 1.4;
+h_sinobit= 10;  // thickness of sino:bit with plugs
 chole_sinobit= 42.8;
 rhole_sinobit= 2.286;
 rmiter_sinobit= w_sinobit/2-chole_sinobit;
@@ -48,19 +49,17 @@ module sinobit3D(w, c, r, rm, t)
 
 m= 3;       // thickness of material
 
-w_sha= 12;  // width of SHA2017 badge with battery
-
 l= 168;     // length of bracket
 w= 28;     // width of crossbeam
 l1= 69.25;  // length of mounting hole center to car center
 l2= (w_sinobit-m)/2-5;  // length of crossbeams center to car center
-l3= 2;      // length of full height beyond crossbeam notches
+l3= 1;      // length of full height beyond crossbeam notches
 d= 3.5;     // mounting hole diameter
 hn= 2;      // depth of feet
 h0= 8;      // minimum height
 h0_sinobit= 4;  // height clearance of sinobit PCB
 h1= w_sinobit*(cos(22.5)-sin(22.5))/2+h0_sinobit;     // maximum height
-lk= l/2-l2-4;  // length of height transition
+lk= l/2-l2-m/2-l3;  // length of height transition
 lk2= h1-h0_sinobit;    // length of internal height transition 
 l4= l2-lk2-l3-m;
 w1= 9.5;    // half width of mounting holes
@@ -71,8 +70,8 @@ h4= h0/2;
 h5= h0/2;
 
 h0d_sha= 2; // notch depth offset due to curvature
-h1_sinobit= 4;   // depth of SHA2017 badge mounting notch
-w1_sha= (w_sha-t_sinobit)/2; // center position of SHA2017 slot
+h1_sinobit= 6;   // depth of sino:bit badge mounting notch
+w1_sinobit= h_sinobit/2; // center position of sino:bit slot
 
 w_cable= 2*w1-m-4;
 h_cable= 2;
@@ -148,7 +147,7 @@ module crossbeam()
             [w/2,h0],[w/2-wk,h1],[-w/2+wk,h1],[-w/2,h0]]);
         translate([w1,h3/2]) crossnotch();
         translate([-w1,h3/2]) crossnotch();
-        translate([w1_sha,h1-h1_sinobit/2]) sinonotch();
+        translate([-w1_sinobit,h1-h1_sinobit/2]) sinonotch();
         translate([0,h_cable/2]) cablenotch();
     }
 }
@@ -160,7 +159,7 @@ module lowbeam()
         polygon(points=[[-w/2,0],[w/2,0],[w/2-wk,h0],[-w/2+wk,h0]]);
         translate([w1,h5/2]) lownotch();
         translate([-w1,h5/2]) lownotch();
-        translate([w1_sha,h0-h0_sinobit/2]) sinoshortnotch();
+        translate([-w1_sinobit,h0-h0_sinobit/2]) sinoshortnotch();
         translate([0,h_cable/2]) cablenotch();
     }
 }
@@ -225,7 +224,7 @@ crossbeams3D(l2);
 lowbeams3D(l4);
 
 
-%translate([0,0,w_sinobit/2+h0_sinobit]) rotate([0,90,0])
+%translate([-h_sinobit/2,0,w_sinobit/2+h0_sinobit]) rotate([0,90,0])
 {
     sinobit3D(w_sinobit, chole_sinobit, rhole_sinobit, rmiter_sinobit, t_sinobit);
 }
