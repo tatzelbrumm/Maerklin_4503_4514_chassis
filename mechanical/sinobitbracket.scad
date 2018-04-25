@@ -43,7 +43,7 @@ module sinobit3D(w, c, r, rm, t)
     linear_extrude(height=t, center=true){sinobit(w, c, r, rm);}
 }
 
-%rotate([0,90,0])
+%translate([0,0,w_sinobit/2]) rotate([0,90,0])
 {
     sinobit3D(w_sinobit, chole_sinobit, rhole_sinobit, rmiter_sinobit, t_sinobit);
 }
@@ -61,18 +61,18 @@ w_sha= 12;  // width of SHA2017 badge with battery
 l= 168;     // length of bracket
 w= 28;      // width of crossbeam
 l1= 69.25;  // length of mounting hole center to car center
-l2= (l_sha-m)/2;  // length of crossbeams center to car center
+l2= (w_sinobit-m)/2-5;  // length of crossbeams center to car center
 l3= 2;      // length of full height beyond crossbeam notches
 lk2= 10;    // length of internal height transition 
 d= 3.5;     // mounting hole diameter
 hn= 2;      // depth of feet
 h0= 4;      // minimum height
-h1= 16;     // maximum height
+h1= w_sinobit*(cos(22.5)-sin(22.5))/2;     // maximum height
 lk= l/2-l2-4;  // length of height transition
 w1= 9.5;    // half width of mounting holes
 wk= 2;      // width of height transition
-h2= 8;      // depth of longbracket mounting notch
-h3= 8;      // depth of crossbeam mounting notch
+h2= h1/2;      // depth of longbracket mounting notch
+h3= h1/2;      // depth of crossbeam mounting notch
 
 h0_sha= 4;  // height clearance of SHA2017PCB
 h0d_sha= 2; // notch depth offset due to curvature
@@ -111,7 +111,7 @@ module longbracket()
             [h0,l/2],[h1,l/2-lk],[h1,-l/2+lk],[h0,-l/2]]);
         translate([h1-h2/2,-l2]) longnotch();
         translate([h1-h2/2,l2]) longnotch();
-        *shacut();
+        shacut();
     }
 }
 
@@ -132,6 +132,16 @@ module crossbeam()
     }
 }
 
+module longbracket3D(t)
+{
+    linear_extrude(height=t, center=true) longbracket();
+}
+
+module crossbeam3D(t)
+{
+    linear_extrude(height=t, center=true) crossbeam();
+}
+
 module longbrackets()
 {
     translate([-wk-2,0]) mirror([1,0]) longbracket();
@@ -144,6 +154,20 @@ module crossbeams()
     translate([0,2]) crossbeam();
 }
 
-longbrackets();
-translate([0,l/2+h1+4]) crossbeams();
+%longbrackets();
+%translate([0,l/2+h1+4]) crossbeams();
 
+module longbrackets3D(w)
+{
+    for (p=[-w,w])
+        translate([p,0,0]) rotate([0,-90,0]) longbracket3D(m);
+}
+
+module crossbeams3D(l)
+{
+    for (p=[-l,l])
+        translate([0,p,0]) rotate([90,0,0]) crossbeam3D(m);
+}
+
+longbrackets3D(w1);
+crossbeams3D(l2);
