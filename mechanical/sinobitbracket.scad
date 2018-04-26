@@ -197,9 +197,9 @@ module lowbeams()
     translate([0,2]) lowbeam();
 }
 
-%longbrackets();
-%translate([0,l/2+h1+4]) crossbeams();
-%translate([0,-l/2-h0-4]) lowbeams();
+longbrackets();
+translate([0,l/2+h1+4]) crossbeams();
+translate([0,-l/2-h0-4]) lowbeams();
 
 module longbrackets3D(w)
 {
@@ -219,9 +219,9 @@ module lowbeams3D(l)
         translate([0,p,0]) rotate([90,0,0]) lowbeam3D(m);
 }
 
-longbrackets3D(w1);
-crossbeams3D(l2);
-lowbeams3D(l4);
+%longbrackets3D(w1);
+%crossbeams3D(l2);
+%lowbeams3D(l4);
 
 
 %translate([-h_sinobit/2,0,w_sinobit/2+h0_sinobit]) rotate([0,90,0])
