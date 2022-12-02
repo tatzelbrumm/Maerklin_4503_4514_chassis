@@ -1,0 +1,822 @@
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Tr\[ADoubleDot]ger f\[UDoubleDot]r M\[ADoubleDot]rklin Glaskasen", \
+"Title",
+ CellChangeTimes->{{3.878662935298212*^9, 
+  3.878662947484367*^9}},ExpressionUUID->"5d4b333d-11d5-45a9-b04d-\
+215c49081671"],
+
+Cell[CellGroupData[{
+
+Cell["Radstand Glaskasten", "Section",
+ CellChangeTimes->{{3.878663009648275*^9, 
+  3.878663020981853*^9}},ExpressionUUID->"35dfde3f-3cb5-478a-a541-\
+3e956cb05006"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"h0", "=", 
+  RowBox[{"Round", "[", 
+   FractionBox["1435", "16.5"], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878664011841044*^9, 3.878664017582622*^9}, {
+  3.87866487239606*^9, 3.878664879664822*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"ab6a8447-3827-41be-93da-fb5e0e24d907"],
+
+Cell[BoxData["87"], "Output",
+ CellChangeTimes->{3.8786640182601767`*^9, 3.878664880189465*^9, 
+  3.879001210800774*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"23f633b1-23ab-4859-ab34-a5a8bac2d832"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"tol", "=", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"0.1", ",", "\"\<Millimeters\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878664863117524*^9, 3.8786648655736647`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"7d715f55-a2e1-43da-a9e4-6a299db5dbc1"],
+
+Cell[BoxData[
+ TemplateBox[{"0.1`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878664866808886*^9, 3.8790012130145607`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"23a7f40a-81cb-4d79-98c5-709dcd2c743a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Achsabstand", "Subsubsection",
+ CellChangeTimes->{{3.878663360873855*^9, 
+  3.8786633623511677`*^9}},ExpressionUUID->"526460fa-f434-4f11-87e9-\
+719ad93dbbd1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Quantity", "[", 
+   RowBox[{"3200", ",", "\"\<Millimeters\>\""}], "]"}], "/", "87."}]], "Input",
+ CellChangeTimes->{{3.8786640678510637`*^9, 3.8786641014819*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"31ae0caa-bc86-4ad1-ad00-492379456098"],
+
+Cell[BoxData[
+ TemplateBox[{"36.7816091954023`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.878664089293826*^9, 3.878664101907201*^9}, 
+   3.879001213558304*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"71721aed-0268-48c4-9aeb-d5a910991e4e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"l", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"1.45", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878663365173253*^9, 3.878663416254487*^9}, {
+  3.8786643967917233`*^9, 3.878664419779234*^9}, {3.878664888712832*^9, 
+  3.878664889613803*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"2cdc5f1b-7bf6-46f3-8127-eb7a82e32fd1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "36.800000000000004`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8786644203776712`*^9, 3.8786648901445513`*^9, 
+  3.879001213790545*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"44a64cd2-0cbe-45c8-ae43-c4f807145007"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spurkranzabstand", "Subsubsection",
+ CellChangeTimes->{{3.878663464020754*^9, 
+  3.87866346727663*^9}},ExpressionUUID->"dd00057b-21c1-4dcb-918d-\
+3b8919cf12cc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"s", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"0.63", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878663473060006*^9, 3.878663508407508*^9}, {
+  3.878664817955621*^9, 3.878664818926133*^9}, {3.8786648531924257`*^9, 
+  3.87866485417857*^9}, {3.878664894871496*^9, 3.8786648972933407`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"86158a7e-648d-4951-a221-40b45de92eac"],
+
+Cell[BoxData[
+ TemplateBox[{"16.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.8786635017914333`*^9, 3.878663509083371*^9}, 
+   3.8786648193482428`*^9, 3.878664898143938*^9, 3.8790012140252867`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"8eb7c4d8-e368-47b1-989d-074260578222"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Innenseite Spurkr\[ADoubleDot]nze", "Subsubsection",
+ CellChangeTimes->{{3.878664957928689*^9, 3.8786649625386868`*^9}, {
+  3.878665087301939*^9, 
+  3.878665088769886*^9}},ExpressionUUID->"001735ac-066f-4caf-ae98-\
+f1ee90999aca"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sInnen", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"0.55", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.87866509071566*^9, 3.87866510947185*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"00c959f2-2d80-4605-8996-143289e6f0bb"],
+
+Cell[BoxData[
+ TemplateBox[{"14.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878665110387745*^9, 3.879001214570202*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"3e76e000-57da-462e-bc4b-cbc0c7c8784c"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Au\[SZ]enseite Spurkr\[ADoubleDot]nze", "Subsubsection",
+ CellChangeTimes->{{3.878664957928689*^9, 
+  3.8786649625386868`*^9}},ExpressionUUID->"493fccf4-c0ca-4549-ab39-\
+82bdc5f1e033"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sAussen", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"0.64", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878663473060006*^9, 3.878663508407508*^9}, {
+  3.878664817955621*^9, 3.878664818926133*^9}, {3.8786648531924257`*^9, 
+  3.87866485417857*^9}, {3.878664894871496*^9, 3.8786648972933407`*^9}, {
+  3.878664980553678*^9, 3.8786649865148687`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"7fb0d8ce-5e8b-4584-8dcb-d6d9f4e89fe3"],
+
+Cell[BoxData[
+ TemplateBox[{"16.3`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878664987712079*^9, 3.8790012148203382`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"c104ad4b-e175-4bfd-901e-ea5d0bc068e4"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Raddurchmesser au\[SZ]en", "Subsubsection",
+ CellChangeTimes->{{3.8786650166879187`*^9, 
+  3.878665025866043*^9}},ExpressionUUID->"29e3439c-12d3-45c7-bf59-\
+243defea7ad0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dAussen", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"0.43", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878663473060006*^9, 3.878663508407508*^9}, {
+  3.878664817955621*^9, 3.878664818926133*^9}, {3.8786648531924257`*^9, 
+  3.87866485417857*^9}, {3.878664894871496*^9, 3.8786648972933407`*^9}, {
+  3.878664980553678*^9, 3.8786649865148687`*^9}, {3.878665041347341*^9, 
+  3.878665054814536*^9}, {3.878671371385365*^9, 3.878671372605691*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"b19dc1be-d340-42ca-9f60-ccc76a3b3325"],
+
+Cell[BoxData[
+ TemplateBox[{"10.9`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878665055391247*^9, 3.878671373334508*^9, 
+  3.879001215008656*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"99cebd09-ac19-45d1-b66b-a5599e7655a3"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spurkranzdurchmesser", "Subsubsection",
+ CellChangeTimes->{{3.878665929728207*^9, 
+  3.8786659403688393`*^9}},ExpressionUUID->"c35f7453-cb35-46d0-95d7-\
+69c6593a452f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dSpurkranz", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{"0.55", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878665954036056*^9, 3.878665981137246*^9}, {
+  3.878671376825441*^9, 3.8786713780379057`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"c56d55dc-e5c4-48aa-825d-acea0326cbee"],
+
+Cell[BoxData[
+ TemplateBox[{"14.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878665981903935*^9, 3.878671378629887*^9, 
+  3.879001215068534*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"f95204ae-4875-4069-a72b-be2664a21123"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Mitte Spurkranz\[ODoubleDot]ffnung", "Subsubsection",
+ CellChangeTimes->{{3.878669542660672*^9, 
+  3.8786695539103003`*^9}},ExpressionUUID->"0245d046-acba-423b-b412-\
+a124d7e9a975"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sMitte", "=", 
+  FractionBox[
+   RowBox[{"sInnen", "+", "sAussen"}], "2"]}]], "Input",
+ CellChangeTimes->{{3.878669556026703*^9, 3.878669586671013*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"32bedfb7-0d32-41e0-a6be-2ead1bff148e"],
+
+Cell[BoxData[
+ TemplateBox[{"15.15`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878669587229854*^9, 3.879001215538987*^9},
+ CellLabel->
+  "Out[10]=",ExpressionUUID->"fbad59e0-2880-4a17-96d8-56d287a0c448"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Breite Spurkranz\[ODoubleDot]ffnung", "Subsubsection",
+ CellChangeTimes->{{3.878670565657844*^9, 
+  3.878670578151129*^9}},ExpressionUUID->"49ea8730-7ea2-4502-9b32-\
+4d9a02844c78"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"b", "=", 
+  RowBox[{"sAussen", "-", "sInnen"}]}]], "Input",
+ CellChangeTimes->{{3.878670593801167*^9, 3.878670608278256*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"4dc78e0e-48a4-4f60-a785-2dabcb18e951"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "2.3000000000000007`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878670609406623*^9, 3.8790012156629553`*^9},
+ CellLabel->
+  "Out[11]=",ExpressionUUID->"39a14423-625b-4ad8-91d8-39fe799ab302"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ADoubleDot]nge Spurkranz\[ODoubleDot]ffnung", "Subsubsection",
+ CellChangeTimes->{{3.8786703254296*^9, 3.878670336403943*^9}, {
+  3.878671489668839*^9, 
+  3.878671497881114*^9}},ExpressionUUID->"4bd0b8e2-dae7-4fb5-9bca-\
+d3c31f773d68"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"2", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox["dSpurkranz", "2"], ")"}], "2"], "-", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox["dAussen", "2"], ")"}], "2"]}]]}], ",", "tol"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8786703381361027`*^9, 3.878670399612623*^9}, {
+  3.878671399429682*^9, 3.878671416062542*^9}, {3.879001708704528*^9, 
+  3.879001713482589*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"21aca42d-3d11-4335-8886-b159b29b7c61"],
+
+Cell[BoxData[
+ TemplateBox[{"8.8`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.87867041022729*^9, 3.878671420384634*^9, 
+  3.879001215794765*^9, 3.879001714221784*^9},
+ CellLabel->
+  "Out[20]=",ExpressionUUID->"cec7e25d-e228-45f0-83b4-bc0d637e5b82"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ADoubleDot]nge Schleifer", "Subsubsection",
+ CellChangeTimes->{{3.879003448996132*^9, 
+  3.879003451617215*^9}},ExpressionUUID->"54a4fcc2-ca46-4b55-82b8-\
+ccd20e4cb134"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lSchleifer", "=", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"68", ",", "\"\<Millimeters\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.879003454333753*^9, 3.879003458134954*^9}, {
+  3.879003549483427*^9, 3.87900355763118*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"55757f97-e46e-42ad-8c60-117cb2fc44e6"],
+
+Cell[BoxData[
+ TemplateBox[{"68", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.879003463729014*^9, 3.8790035586660633`*^9},
+ CellLabel->
+  "Out[26]=",ExpressionUUID->"0bff078c-929c-4efb-b969-8e35e01ad46c"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Breite Schleifer", "Subsubsection",
+ CellChangeTimes->{{3.879003467241664*^9, 
+  3.879003472241802*^9}},ExpressionUUID->"3bde01b7-2c09-464a-bd62-\
+64ace581c0d3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"wSchleifer", "=", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"7", ",", "\"\<Millimeters\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.879003485629943*^9, 3.879003489998213*^9}, {
+  3.879003562067458*^9, 3.879003569151917*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"15b37b0a-eb3f-4dcd-ba1f-a22351ff77d3"],
+
+Cell[BoxData[
+ TemplateBox[{"7", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.87900349043421*^9, 3.87900356967962*^9},
+ CellLabel->
+  "Out[27]=",ExpressionUUID->"58dd0d76-e0c2-430f-ba6d-5de95ae7c0f4"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Halterung", "Section",
+ CellChangeTimes->{{3.878666189930759*^9, 
+  3.878666191904334*^9}},ExpressionUUID->"5d61bb12-5fb6-4f0f-a142-\
+591922bf041f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"points", "=", 
+  FractionBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "l"}], ",", 
+       RowBox[{"-", "sMitte"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "l"}], ",", "sMitte"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"l", ",", "sMitte"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"l", ",", 
+       RowBox[{"-", "sMitte"}]}], "}"}]}], "}"}], "2"]}]], "Input",
+ CellChangeTimes->{{3.878666366430511*^9, 3.8786664426977673`*^9}, {
+  3.87866647914223*^9, 3.878666527018952*^9}, {3.8786665584757967`*^9, 
+  3.87866663157441*^9}, {3.878669595757362*^9, 3.8786696063639812`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"353affd7-6127-4b02-82db-04260cac4ae6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "18.400000000000002`"}], "\"mm\"", "millimeters", 
+       "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "7.575`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "18.400000000000002`"}], "\"mm\"", "millimeters", 
+       "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{"7.575`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+      "18.400000000000002`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{"7.575`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+      "18.400000000000002`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "7.575`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.878666444925024*^9, {3.878666492626637*^9, 3.8786665274044733`*^9}, 
+   3.8786665865097113`*^9, {3.878666623800089*^9, 3.878666632231441*^9}, 
+   3.878669608383309*^9, 3.87900121604375*^9},
+ CellLabel->
+  "Out[13]=",ExpressionUUID->"1a9dea78-06ef-4f58-8e78-ad9b48c1d1ee"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Point", "[", 
+     FractionBox["points", 
+      RowBox[{"Quantity", "[", "\"\<Millimeters\>\"", "]"}]], "]"}], "]"}], 
+   ",", 
+   RowBox[{"Frame", "->", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878669079145691*^9, 3.878669116751878*^9}, {
+  3.8786691700134573`*^9, 3.878669182198262*^9}, {3.878669217732438*^9, 
+  3.878669226298233*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"4df752fe-aa34-4c45-8c07-e8243aadc222"],
+
+Cell[BoxData[
+ GraphicsBox[
+  PointBox[{{-18.400000000000002`, -7.575}, {-18.400000000000002`, 7.575}, {
+   18.400000000000002`, 7.575}, {18.400000000000002`, -7.575}}],
+  Frame->True]], "Output",
+ CellChangeTimes->{{3.8786690839803553`*^9, 3.878669117191339*^9}, 
+   3.878669182858163*^9, 3.878669226791275*^9, 3.87866961816712*^9, 
+   3.879001216174431*^9},
+ CellLabel->
+  "Out[14]=",ExpressionUUID->"9886a0e2-d842-41d1-80cf-ca3747561108"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spurkranz\[ODoubleDot]ffnung", "Subsubsection",
+ CellChangeTimes->{{3.878670445763317*^9, 
+  3.878670449916822*^9}},ExpressionUUID->"6a778562-877b-4887-9900-\
+41fe5d48602c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"oeffnung", "=", 
+  FractionBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "c"}], ",", 
+       RowBox[{"-", "b"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "c"}], ",", "b"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"c", ",", "b"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"c", ",", 
+       RowBox[{"-", "b"}]}], "}"}]}], "}"}], "2"]}]], "Input",
+ CellChangeTimes->{{3.8786700625409813`*^9, 3.8786700650364733`*^9}, {
+  3.8786704565027037`*^9, 3.878670468490542*^9}, {3.878670535059784*^9, 
+  3.878670549202338*^9}, {3.878670694286046*^9, 3.8786707384886103`*^9}, {
+  3.878670830376499*^9, 3.8786708333676987`*^9}, {3.878671346939124*^9, 
+  3.8786713564740047`*^9}, {3.878671511474325*^9, 3.878671512766083*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"33b62094-fcb3-4ea0-af76-7ac8233736f7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "4.4`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "1.1500000000000004`"}], "\"mm\"", "millimeters", 
+       "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "4.4`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+      "1.1500000000000004`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"4.4`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+      "1.1500000000000004`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"4.4`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "1.1500000000000004`"}], "\"mm\"", "millimeters", 
+       "\"Millimeters\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8786707395452137`*^9, 3.8786708342391653`*^9, 
+  3.878671513525797*^9, 3.879001216386848*^9, 3.879001722471593*^9},
+ CellLabel->
+  "Out[21]=",ExpressionUUID->"84d52cd2-80bf-429f-8a90-0ee3eb3ff8b0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"schleifer", "=", 
+  RowBox[{
+   FractionBox["1", "2."], 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "lSchleifer"}], ",", 
+       RowBox[{"-", "wSchleifer"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "lSchleifer"}], ",", "wSchleifer"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"lSchleifer", ",", "wSchleifer"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"lSchleifer", ",", 
+       RowBox[{"-", "wSchleifer"}]}], "}"}]}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.8790036190706577`*^9, 3.87900368595124*^9}, 
+   3.87900372357117*^9},
+ CellLabel->"In[30]:=",ExpressionUUID->"9c77a202-334b-45c2-989b-ee140b025434"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "34.`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "3.5`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"-", "34.`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{"3.5`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"34.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{"3.5`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"34.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"], ",", 
+     TemplateBox[{
+       RowBox[{"-", "3.5`"}], "\"mm\"", "millimeters", "\"Millimeters\""},
+      "Quantity"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8790036899950867`*^9, 3.879003724849069*^9},
+ CellLabel->
+  "Out[30]=",ExpressionUUID->"ccec5bb9-50e3-4dde-9c08-416c41cc6d1a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Oeffnungen", "=", 
+  RowBox[{"Append", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Function", "[", 
+      RowBox[{"point", ",", 
+       RowBox[{
+        RowBox[{
+         FractionBox[
+          RowBox[{"point", "+", "#"}], 
+          RowBox[{"Quantity", "[", "\"\<Millimeters\>\"", "]"}]], "&"}], "/@",
+         "oeffnung"}]}], "]"}], "/@", "points"}], ",", 
+    FractionBox["schleifer", 
+     RowBox[{"Quantity", "[", "\"\<Millimeters\>\"", "]"}]]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8786708482731943`*^9, 3.878670947454297*^9}, {
+  3.878671046969905*^9, 3.8786710957569227`*^9}, {3.87867113156951*^9, 
+  3.878671133490939*^9}, {3.8786712131343517`*^9, 3.878671215165183*^9}, {
+  3.878671682789178*^9, 3.8786716850859537`*^9}, {3.87900370710491*^9, 
+  3.8790037411358433`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"e34d4be5-43bb-4584-95c6-14631fded4bd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "22.800000000000004`"}], ",", 
+       RowBox[{"-", "8.725000000000001`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "22.800000000000004`"}], ",", 
+       RowBox[{"-", "6.425`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "14.000000000000002`"}], ",", 
+       RowBox[{"-", "6.425`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "14.000000000000002`"}], ",", 
+       RowBox[{"-", "8.725000000000001`"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "22.800000000000004`"}], ",", "6.425`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "22.800000000000004`"}], ",", "8.725000000000001`"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "14.000000000000002`"}], ",", "8.725000000000001`"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "14.000000000000002`"}], ",", "6.425`"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"14.000000000000002`", ",", "6.425`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"14.000000000000002`", ",", "8.725000000000001`"}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{"22.800000000000004`", ",", "8.725000000000001`"}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{"22.800000000000004`", ",", "6.425`"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"14.000000000000002`", ",", 
+       RowBox[{"-", "8.725000000000001`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"14.000000000000002`", ",", 
+       RowBox[{"-", "6.425`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"22.800000000000004`", ",", 
+       RowBox[{"-", "6.425`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"22.800000000000004`", ",", 
+       RowBox[{"-", "8.725000000000001`"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "34.`"}], ",", 
+       RowBox[{"-", "3.5`"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "34.`"}], ",", "3.5`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"34.`", ",", "3.5`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"34.`", ",", 
+       RowBox[{"-", "3.5`"}]}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8786708596687193`*^9, 3.878670949622538*^9, 3.878671054244248*^9, 
+   3.8786710986556473`*^9, 3.878671295985928*^9, 3.8786715446556807`*^9, 
+   3.8786716862061443`*^9, 3.879001216574785*^9, 3.879001729636393*^9, {
+   3.8790037144356403`*^9, 3.879003741826311*^9}},
+ CellLabel->
+  "Out[31]=",ExpressionUUID->"b334f1b4-bf99-4b19-8e8d-f179aad920e2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Polygon", "[", "##", "]"}], "&"}], "/@", "Oeffnungen"}], ",", 
+   RowBox[{"Frame", "->", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8786713011798887`*^9, 3.878671316414809*^9}, {
+  3.878671696523386*^9, 3.878671707322939*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"0ce42033-0bf2-41b0-8d9c-b6508b520b7d"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   PolygonBox[{{-22.800000000000004`, -8.725000000000001}, \
+{-22.800000000000004`, -6.425}, {-14.000000000000002`, -6.425}, \
+{-14.000000000000002`, -8.725000000000001}}], 
+   PolygonBox[{{-22.800000000000004`, 6.425}, {-22.800000000000004`, 
+    8.725000000000001}, {-14.000000000000002`, 
+    8.725000000000001}, {-14.000000000000002`, 6.425}}], 
+   PolygonBox[{{14.000000000000002`, 6.425}, {14.000000000000002`, 
+    8.725000000000001}, {22.800000000000004`, 8.725000000000001}, {
+    22.800000000000004`, 6.425}}], 
+   PolygonBox[{{14.000000000000002`, -8.725000000000001}, {
+    14.000000000000002`, -6.425}, {22.800000000000004`, -6.425}, {
+    22.800000000000004`, -8.725000000000001}}], 
+   PolygonBox[{{-34., -3.5}, {-34., 3.5}, {34., 3.5}, {34., -3.5}}]},
+  Frame->True]], "Output",
+ CellChangeTimes->{{3.8786713058012047`*^9, 3.8786713176505947`*^9}, {
+   3.878671539659272*^9, 3.878671548454298*^9}, 3.878671708209578*^9, 
+   3.879001216744425*^9, 3.879001733252276*^9, 3.879003760430468*^9},
+ CellLabel->
+  "Out[32]=",ExpressionUUID->"f5b8dc2f-6e7c-4293-a635-a76118e0b88d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<oeffnungen.csv\>\"", ",", "Oeffnungen", ",", "\"\<CSV\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.878672158270516*^9, 3.878672188835746*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"6e7df5f7-a517-4881-99db-79d5aadfb31d"],
+
+Cell[BoxData["\<\"oeffnungen.csv\"\>"], "Output",
+ CellChangeTimes->{{3.878672168726853*^9, 3.8786721914505568`*^9}, 
+   3.879001216934*^9},
+ CellLabel->
+  "Out[18]=",ExpressionUUID->"496899cb-2700-43d4-9ea1-68a62a1b3a86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.878672194852928*^9, 3.878672196532802*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"8be3f88f-4a7f-4348-a228-25bb6742398f"],
+
+Cell[BoxData["\<\"/home/cmaier/scad/Maerklin/mechanical\"\>"], "Output",
+ CellChangeTimes->{3.878672197032462*^9, 3.879001217121564*^9},
+ CellLabel->
+  "Out[19]=",ExpressionUUID->"af09295a-65a0-47e8-a401-010867dc160c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{606., 659.25},
+WindowMargins->{{Automatic, 10.5}, {67.5, Automatic}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+FrontEndVersion->"13.1 for Linux x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2cf5936b-ba20-4824-9e9f-1ceda3401978"
+]
