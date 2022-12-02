@@ -1,0 +1,230 @@
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Halter f\[UDoubleDot]r M\[ADoubleDot]rklin Glaskasten Umschalter", \
+"Title",
+ CellChangeTimes->{{3.878890277452736*^9, 
+  3.878890291979109*^9}},ExpressionUUID->"14c825a9-5c3b-416f-ae69-\
+71f38385f234"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"tol", "=", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"0.1", ",", "\"\<Millimeters\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878664863117524*^9, 3.8786648655736647`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6a564b5a-4770-4c29-a603-eaec59546019"],
+
+Cell[BoxData[
+ TemplateBox[{"0.1`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8788903882233963`*^9, 3.878996801493189*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"68f772bd-0fe8-4b15-a8fe-11a9ad71a998"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"l", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".87", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8788903276559057`*^9, 3.878890394329316*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"2d833e3e-0934-4c08-a862-781536cb17cd"],
+
+Cell[BoxData[
+ TemplateBox[{"22.1`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.87889039724365*^9, 3.878996802066386*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"743c779b-ed87-4c10-ae3c-3cb6933472fa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"w", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".62", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8788903276559057`*^9, 3.878890394329316*^9}, {
+  3.878893072809822*^9, 3.8788930803068123`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"f87dcb39-66d1-4605-b81b-09a83dffdc20"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "15.700000000000001`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8788930817696323`*^9, 3.878996802107069*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"4244c6d4-e03e-42cd-8909-46c19a795d8b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ls", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".58", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878893096435364*^9, 3.878893112599628*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"6ee5ef65-0a38-4108-8516-96aec42b3e71"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "14.700000000000001`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8788931137432632`*^9, 3.8789968021547213`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"d9a159e7-1675-4101-aec7-8b155a0b0870"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ws", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".55", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878893114996078*^9, 3.878893138517096*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"c741d921-1c89-4e56-b9f2-723da4c36ad4"],
+
+Cell[BoxData[
+ TemplateBox[{"14.`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8788931392243357`*^9, 3.878996802245495*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"af17bc89-5f55-4bee-91ed-13b582e70476"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"l1", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".545", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878893176222754*^9, 3.8788931826063557`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"8a11657c-cf50-4503-b0f3-5fef17c52c56"],
+
+Cell[BoxData[
+ TemplateBox[{"13.8`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878893187327716*^9, 3.87899680230735*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"323cd117-fdd9-45e2-bc21-73756423b9b9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"h", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".23", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8788932024673567`*^9, 3.8788932147898083`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"cfd38981-3a50-4012-8a4a-6920018781d0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "5.800000000000001`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.87889321732792*^9, 3.8789968023851337`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"2938e456-e279-4971-a2fe-e587c867b3f4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"hs", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".16", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8788932222950087`*^9, 3.878893232044395*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"732576c3-417f-4bc0-b685-b7c93de8bd9c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "4.1000000000000005`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878893233276877*^9, 3.878996802457521*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"b8c4508c-c1b5-4f6e-9e66-c01e12063916"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"m", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".03", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.87899676220724*^9, 3.878996795669413*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"4189832c-d4e1-48a6-9049-f8687a32c84e"],
+
+Cell[BoxData[
+ TemplateBox[{"0.8`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878996802538003*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"5d6a8821-af64-45cd-a83d-d8d6fec5daa8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d", "=", 
+  RowBox[{"Round", "[", 
+   RowBox[{
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", 
+       RowBox[{".2", ",", "\"\<Inches\>\""}], "]"}], ",", 
+      "\"\<Millimeters\>\""}], "]"}], ",", "tol"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.87899676220724*^9, 3.878996795669413*^9}, {
+  3.878997975728916*^9, 3.878997981672632*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"ad326fa9-2354-444f-ac0b-668a023db04e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "5.1000000000000005`", "\"mm\"", "millimeters", "\"Millimeters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.878997987103252*^9},
+ CellLabel->
+  "Out[10]=",ExpressionUUID->"62e1238a-3d77-4697-9cdb-3d9640d75176"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{606., 659.25},
+WindowMargins->{{Automatic, 23.25}, {72.75, Automatic}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+FrontEndVersion->"13.1 for Linux x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4ffb7bb2-346a-418c-b7cb-786a972e1b3d"
+]
